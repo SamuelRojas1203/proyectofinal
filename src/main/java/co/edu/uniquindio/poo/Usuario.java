@@ -1,16 +1,20 @@
 package co.edu.uniquindio.poo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Usuario {
     private String Cedula;
-    private String correo;
-    private String contrasenia;
+    private String Correo;
+    private String Contrasenia;
+    private String PalabraSecreta;
 
     public String getContrasenia() {
-        return contrasenia;
+        return Contrasenia;
     }
 
-    public void setContrasenia(String contrasenia) {
-        this.contrasenia = contrasenia;
+    public void setContrasenia(String Contrasenia) {
+        this.Contrasenia = Contrasenia;
     }
     
     /**
@@ -25,11 +29,14 @@ public class Usuario {
         }
     }
     **/
-    public Usuario(String Cedula, String correo, String contrasenia){
+    public Usuario(String Cedula, String Correo, String Contrasenia, String PalabraSecreta){
     this.Cedula = Cedula;
-    this.correo = correo;
-    this.contrasenia = contrasenia;
+    this.Correo = Correo;
+    this.Contrasenia = Contrasenia;
+    this.PalabraSecreta = PalabraSecreta;
+    
 }
+
 public String getCedula() {
     return Cedula;
 }
@@ -37,10 +44,18 @@ public void setCedula(String cedula) {
     Cedula = cedula;
 }
 public String getCorreo() {
-    return correo;
+    return Correo;
 }
-public void setCorreo(String correo) {
-    this.correo = correo;
+public void setCorreo(String Correo) {
+    this.Correo = Correo;
+}
+
+public String getPalabraSecreta() {
+    return PalabraSecreta;
+}
+
+public void setPalabraSecreta(String palabraSecreta) {
+    PalabraSecreta = palabraSecreta;
 }
 
 }

@@ -1,5 +1,6 @@
 package co.edu.uniquindio.poo;
 
-public class Moto { 
+public class Moto{ 
+
     
  }

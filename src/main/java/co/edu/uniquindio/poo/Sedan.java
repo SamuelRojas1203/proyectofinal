@@ -59,48 +59,17 @@ public class Sedan extends Vehiculo {
         public void setAsistentePermanenciaCarril(boolean asistentePermanenciaCarril) {
             this.asistentePermanenciaCarril = asistentePermanenciaCarril;
         }
-    public String mensaje(Sedan sedan) {
-        String mensaje = sedan.getMarca() + "\n" +
-                sedan.getModelo() + "\n" +
-                sedan.getCambios() + "\n" +
-                sedan.getVelocidadMaxima() + "\n" +
-                sedan.getCilindraje() + "\n" +
-                sedan.getNumeroPasajeros() + "\n" +
-                sedan.getNumeroPuertas() + "\n" +
-                sedan.getCapacidadMaletero() + "\n" +
-                sedan.isAireAcondicionado() + "\n" +
-                sedan.isCamaraReversa() + "\n" +
-                sedan.getNumeroBolsasAire() + "\n" +
-                sedan.isTieneABS() + "\n" +
-                sedan.isVelocidadCrucero() + "\n" +
-                sedan.isSensoresColision() + "\n" +
-                sedan.isSensorTraficoCruzado() + "\n" +
-                sedan.isAsistentePermanenciaCarril();
-        return mensaje;
-    }
 
-    @Override
-    public String toString() {
-        return "Sedan [capacidadMaletero=" + capacidadMaletero + ", marca=" + marca + ", velocidadCrucero="
-                + velocidadCrucero + ", esNuevo=" + esNuevo + ", sensoresColision=" + sensoresColision + ", modelo="
-                + modelo + ", cambios=" + cambios + ", sensorTraficoCruzado=" + sensorTraficoCruzado
-                + ", velocidadMaxima=" + velocidadMaxima + ", cilindraje=" + cilindraje
-                + ", asistentePermanenciaCarril=" + asistentePermanenciaCarril + ", numeroPasajeros=" + numeroPasajeros
-                + ", numeroPuertas=" + numeroPuertas + ", aireAcondicionado=" + aireAcondicionado + ", camaraReversa="
-                + camaraReversa + ", numeroBolsasAire=" + numeroBolsasAire + ", tieneABS=" + tieneABS
-                + ", getCapacidadMaletero()=" + getCapacidadMaletero() + ", getMarca()=" + getMarca() + ", isEsNuevo()="
-                + isEsNuevo() + ", isVelocidadCrucero()=" + isVelocidadCrucero() + ", getModelo()=" + getModelo()
-                + ", getCambios()=" + getCambios() + ", isSensoresColision()=" + isSensoresColision()
-                + ", getVelocidadMaxima()=" + getVelocidadMaxima() + ", isSensorTraficoCruzado()="
-                + isSensorTraficoCruzado() + ", getCilindraje()=" + getCilindraje()
-                + ", isAsistentePermanenciaCarril()=" + isAsistentePermanenciaCarril() + ", getNumeroPasajeros()="
-                + getNumeroPasajeros() + ", getNumeroPuertas()=" + getNumeroPuertas() + ", isAireAcondicionado()="
-                + isAireAcondicionado() + ", isCamaraReversa()=" + isCamaraReversa() + ", getNumeroBolsasAire()="
-                + getNumeroBolsasAire() + ", isTieneABS()=" + isTieneABS() + "]";
-    }
-
-    
-
-
-
+        @Override
+        public String toString() {
+            return "Sedan [capacidadMaletero=" + capacidadMaletero + ", marca=" + marca + ", velocidadCrucero="
+                    + velocidadCrucero + ", esNuevo=" + esNuevo + ", sensoresColision=" + sensoresColision + ", modelo="
+                    + modelo + ", cambios=" + cambios + ", sensorTraficoCruzado=" + sensorTraficoCruzado
+                    + ", velocidadMaxima=" + velocidadMaxima + ", cilindraje=" + cilindraje
+                    + ", asistentePermanenciaCarril=" + asistentePermanenciaCarril + ", numeroPasajeros="
+                    + numeroPasajeros + ", numeroPuertas=" + numeroPuertas + ", aireAcondicionado=" + aireAcondicionado
+                    + ", camaraReversa=" + camaraReversa + ", numeroBolsasAire=" + numeroBolsasAire + ", tieneABS="
+                    + tieneABS + "]";
+        }
+        
 }

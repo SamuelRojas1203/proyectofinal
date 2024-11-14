@@ -58,6 +58,18 @@ package co.edu.uniquindio.poo;
         public void setEs4x4(boolean es4x4) {
             this.es4x4 = es4x4;
         }
+
+        @Override
+        public String toString() {
+            return "Suv [capacidadMaletero=" + capacidadMaletero + ", marca=" + marca + ", sensoresColision="
+                    + sensoresColision + ", esNuevo=" + esNuevo + ", sensorTraficoCruzado=" + sensorTraficoCruzado
+                    + ", modelo=" + modelo + ", cambios=" + cambios + ", asistentePermanenciaCarril="
+                    + asistentePermanenciaCarril + ", velocidadMaxima=" + velocidadMaxima + ", cilindraje=" + cilindraje
+                    + ", es4x4=" + es4x4 + ", numeroPasajeros=" + numeroPasajeros + ", numeroPuertas=" + numeroPuertas
+                    + ", aireAcondicionado=" + aireAcondicionado + ", camaraReversa=" + camaraReversa
+                    + ", numeroBolsasAire=" + numeroBolsasAire + ", tieneABS=" + tieneABS;
+        }
+        
     }
     
     
