@@ -4,11 +4,11 @@ public class Deportivo extends Vehiculo {
     private int caballosDeFuerza;
     private double tiempo0a100;
 
-    public Deportivo(String marca, boolean esNuevo, String modelo, int cambios, int velocidadMaxima, int cilindraje, 
-                     int numeroPasajeros, int numeroPuertas, boolean aireAcondicionado, boolean camaraReversa, 
-                     int numeroBolsasAire, boolean tieneABS, int caballosDeFuerza, double tiempo0a100) {
-        super(marca, esNuevo, modelo, cambios, velocidadMaxima, cilindraje, numeroPasajeros, numeroPuertas, 
-              aireAcondicionado, camaraReversa, numeroBolsasAire, tieneABS);
+    public Deportivo(String marca, Nuevo nuevo, String modelo, int cambios, int velocidadMaxima, int cilindraje, 
+                     int numeroPasajeros, int numeroPuertas, AireAcondicionado aire, CamaraReversa Camara, 
+                     int numeroBolsasAire, abs ABS, int caballosDeFuerza, double tiempo0a100) {
+        super(marca, nuevo, modelo, cambios, velocidadMaxima, cilindraje, numeroPasajeros, numeroPuertas, 
+              aire, Camara, numeroBolsasAire, ABS);
         this.caballosDeFuerza = caballosDeFuerza;
         this.tiempo0a100 = tiempo0a100;
         

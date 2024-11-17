@@ -4,11 +4,11 @@ package co.edu.uniquindio.poo;
         private int numeroEjes;
         private int numeroSalidasEmergencia;
     
-        public Bus(String marca, boolean esNuevo, String modelo, int cambios, int velocidadMaxima, int cilindraje, 
-                   int numeroPasajeros, int numeroPuertas, boolean aireAcondicionado, boolean camaraReversa, 
-                   int numeroBolsasAire, boolean tieneABS, int capacidadMaletero, int numeroEjes, int numeroSalidasEmergencia) {
-            super(marca, esNuevo, modelo, cambios, velocidadMaxima, cilindraje, numeroPasajeros, numeroPuertas, 
-                  aireAcondicionado, camaraReversa, numeroBolsasAire, tieneABS);
+        public Bus(String marca, Nuevo nuevo, String modelo, int cambios, int velocidadMaxima, int cilindraje, 
+                   int numeroPasajeros, int numeroPuertas, AireAcondicionado aire, CamaraReversa Camara, 
+                   int numeroBolsasAire, abs ABS, int capacidadMaletero, int numeroEjes, int numeroSalidasEmergencia) {
+            super(marca, nuevo, modelo, cambios, velocidadMaxima, cilindraje, numeroPasajeros, numeroPuertas, 
+                  aire, Camara, numeroBolsasAire, ABS);
             this.capacidadMaletero = capacidadMaletero;
             this.numeroEjes = numeroEjes;
             this.numeroSalidasEmergencia = numeroSalidasEmergencia;
@@ -40,22 +40,10 @@ package co.edu.uniquindio.poo;
 
         @Override
         public String toString() {
-            return "Bus{" +
-                    "capacidadMaletero=" + capacidadMaletero +
-                    ", numeroEjes=" + numeroEjes +
-                    ", numeroSalidasEmergencia=" + numeroSalidasEmergencia +
-                    ", marca='" + marca + '\'' +
-                    ", esNuevo=" + esNuevo +
-                    ", modelo='" + modelo + '\'' +
-                    ", cambios=" + cambios +
-                    ", velocidadMaxima=" + velocidadMaxima +
-                    ", cilindraje=" + cilindraje +
-                    ", numeroPasajeros=" + numeroPasajeros +
-                    ", numeroPuertas=" + numeroPuertas +
-                    ", aireAcondicionado=" + aireAcondicionado +
-                    ", camaraReversa=" + camaraReversa +
-                    ", numeroBolsasAire=" + numeroBolsasAire +
-                    ", tieneABS=" + tieneABS +
-                    '}';
+            return "Bus [capacidadMaletero=" + capacidadMaletero + ", numeroEjes=" + numeroEjes
+                    + ", numeroSalidasEmergencia=" + numeroSalidasEmergencia + "]";
         }
-    }
+
+       
+        }
+    

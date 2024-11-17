@@ -1,14 +1,14 @@
 package co.edu.uniquindio.poo;
     public class Camion extends Vehiculo {
         private int capacidadCarga;
-        private boolean frenosAire;
+        private FrenosAire frenosAire;
         private int numeroEjes;
         private String tipoCamion;
     
-        public Camion(String marca, boolean esNuevo, String modelo, int cambios, int velocidadMaxima, int cilindraje, 
-                      boolean aireAcondicionado, boolean tieneABS, int capacidadCarga, boolean frenosAire, int numeroEjes, 
+        public Camion(String marca, Nuevo nuevo, String modelo, int cambios, int velocidadMaxima, int cilindraje, 
+                      AireAcondicionado aire, abs a, int capacidadCarga, FrenosAire frenosAire, int numeroEjes, 
                       String tipoCamion) {
-            super(marca, esNuevo, modelo, cambios, velocidadMaxima, cilindraje, 0, 0, aireAcondicionado, false, 0, tieneABS);
+            super(marca, nuevo, modelo, cambios, velocidadMaxima, cilindraje, aire, a);
             this.capacidadCarga = capacidadCarga;
             this.frenosAire = frenosAire;
             this.numeroEjes = numeroEjes;
@@ -21,14 +21,6 @@ package co.edu.uniquindio.poo;
 
         public void setCapacidadCarga(int capacidadCarga) {
             this.capacidadCarga = capacidadCarga;
-        }
-
-        public boolean isFrenosAire() {
-            return frenosAire;
-        }
-
-        public void setFrenosAire(boolean frenosAire) {
-            this.frenosAire = frenosAire;
         }
 
         public int getNumeroEjes() {
@@ -46,4 +38,13 @@ package co.edu.uniquindio.poo;
         public void setTipoCamion(String tipoCamion) {
             this.tipoCamion = tipoCamion;
         }
+
+        public FrenosAire getFrenosAire() {
+            return frenosAire;
+        }
+
+        public void setFrenosAire(FrenosAire frenosAire) {
+            this.frenosAire = frenosAire;
+        }
+        
     }

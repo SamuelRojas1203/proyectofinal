@@ -1,22 +1,20 @@
 package co.edu.uniquindio.poo;
     public class Suv extends Vehiculo {
         private int capacidadMaletero;
-        private boolean sensoresColision;
-        private boolean sensorTraficoCruzado;
-        private boolean asistentePermanenciaCarril;
-        private boolean es4x4;
+        private SensoresColision sensoresColision;
+        private SensorTraficoCruzado sensorTraficoCruzado;
+        private AsistentePermanenciaCarill asistentePermanenciaCarril;
     
-        public Suv(String marca, boolean esNuevo, String modelo, int cambios, int velocidadMaxima, int cilindraje, 
-                         int numeroPasajeros, int numeroPuertas, boolean aireAcondicionado, boolean camaraReversa, 
-                         int numeroBolsasAire, boolean tieneABS, int capacidadMaletero, boolean sensoresColision, 
-                         boolean sensorTraficoCruzado, boolean asistentePermanenciaCarril, boolean es4x4) {
-            super(marca, esNuevo, modelo, cambios, velocidadMaxima, cilindraje, numeroPasajeros, numeroPuertas, 
-                  aireAcondicionado, camaraReversa, numeroBolsasAire, tieneABS);
+        public Suv(String Marca, Nuevo nuevo, String Modelo, int Cambios, int VelocidadMaxima, int Cilindraje, 
+                         int NumeroPasajeros, int NumeroPuertas, AireAcondicionado aire, CamaraReversa Camara, 
+                         int NumeroBolsasAire, abs a, int capacidadMaletero, SensoresColision sensoresColision, 
+                         SensorTraficoCruzado sensorTraficoCruzado, AsistentePermanenciaCarill asistentePermanenciaCarril, Tiene4x4 es4x4) {
+            super(Marca, nuevo, Modelo, Cambios, VelocidadMaxima, Cilindraje, NumeroPasajeros, NumeroPuertas, 
+                  aire, Camara, NumeroBolsasAire,a, es4x4 );
             this.capacidadMaletero = capacidadMaletero;
             this.sensoresColision = sensoresColision;
             this.sensorTraficoCruzado = sensorTraficoCruzado;
             this.asistentePermanenciaCarril = asistentePermanenciaCarril;
-            this.es4x4 = es4x4;
         }
 
         public int getCapacidadMaletero() {
@@ -27,47 +25,15 @@ package co.edu.uniquindio.poo;
             this.capacidadMaletero = capacidadMaletero;
         }
 
-        public boolean isSensoresColision() {
-            return sensoresColision;
-        }
-
-        public void setSensoresColision(boolean sensoresColision) {
-            this.sensoresColision = sensoresColision;
-        }
-
-        public boolean isSensorTraficoCruzado() {
-            return sensorTraficoCruzado;
-        }
-
-        public void setSensorTraficoCruzado(boolean sensorTraficoCruzado) {
-            this.sensorTraficoCruzado = sensorTraficoCruzado;
-        }
-
-        public boolean isAsistentePermanenciaCarril() {
-            return asistentePermanenciaCarril;
-        }
-
-        public void setAsistentePermanenciaCarril(boolean asistentePermanenciaCarril) {
-            this.asistentePermanenciaCarril = asistentePermanenciaCarril;
-        }
-
-        public boolean isEs4x4() {
-            return es4x4;
-        }
-
-        public void setEs4x4(boolean es4x4) {
-            this.es4x4 = es4x4;
-        }
-
         @Override
         public String toString() {
-            return "Suv [capacidadMaletero=" + capacidadMaletero + ", marca=" + marca + ", sensoresColision="
-                    + sensoresColision + ", esNuevo=" + esNuevo + ", sensorTraficoCruzado=" + sensorTraficoCruzado
-                    + ", modelo=" + modelo + ", cambios=" + cambios + ", asistentePermanenciaCarril="
-                    + asistentePermanenciaCarril + ", velocidadMaxima=" + velocidadMaxima + ", cilindraje=" + cilindraje
-                    + ", es4x4=" + es4x4 + ", numeroPasajeros=" + numeroPasajeros + ", numeroPuertas=" + numeroPuertas
-                    + ", aireAcondicionado=" + aireAcondicionado + ", camaraReversa=" + camaraReversa
-                    + ", numeroBolsasAire=" + numeroBolsasAire + ", tieneABS=" + tieneABS;
+            return "Suv [capacidadMaletero=" + capacidadMaletero + ", Marca=" + Marca + ", sensoresColision="
+                    + sensoresColision + ", Nuevo=" + nuevo + ", sensorTraficoCruzado=" + sensorTraficoCruzado
+                    + ", Modelo=" + Modelo + ", Cambios="+ Cambios +", aCistentePermNnenciaCarriN="
+                    + asistentePermanenciaCarril + ", velocidadMaxima=" + VelocidadMaxima + ", cilindraje=" + Cilindraje
+                    + ", es4x4=" + es4x4 + ", numeroPasajeros=" + NumeroPasajeros + ", numeroPuertas=" + NumeroPuertas
+                    + ", aireAcondicionado=" +  aire + ", camaraReversa=" + Camara
+                    + ", numeroBolsasAire=" + NumeroBolsasAire + ", tieneABS=" + a;
         }
         
     }

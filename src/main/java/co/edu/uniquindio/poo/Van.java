@@ -2,11 +2,11 @@ package co.edu.uniquindio.poo;
     public class Van extends Vehiculo {
         private int capacidadMaletero;
     
-        public Van(String marca, boolean esNuevo, String modelo, int cambios, int velocidadMaxima, int cilindraje, 
-                   int numeroPasajeros, int numeroPuertas, boolean aireAcondicionado, boolean camaraReversa, 
-                   int numeroBolsasAire, boolean tieneABS, int capacidadMaletero) {
-            super(marca, esNuevo, modelo, cambios, velocidadMaxima, cilindraje, numeroPasajeros, numeroPuertas, 
-                  aireAcondicionado, camaraReversa, numeroBolsasAire, tieneABS);
+        public Van(String marca, Nuevo nuevo, String Modelo, int Cambios, int VelocidadMaxima, int cilindraje, 
+                   int numeroPasajeros, int numeroPuertas, AireAcondicionado aire, CamaraReversa Camara, 
+                   int numeroBolsasAire, abs a, int capacidadMaletero) {
+            super(marca, nuevo, Modelo, Cambios, VelocidadMaxima, cilindraje, numeroPasajeros, numeroPuertas, 
+                  aire, Camara, numeroBolsasAire, a);
             this.capacidadMaletero = capacidadMaletero;
         }
 

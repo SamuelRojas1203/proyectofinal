@@ -1,13 +1,14 @@
 package co.edu.uniquindio.poo;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Usuario {
-    private String Cedula;
-    private String Correo;
-    private String Contrasenia;
-    private String PalabraSecreta;
+    public String Cedula;
+    public String Correo;
+    public String Contrasenia;
+    public String PalabraSecreta;
+
+    public Usuario(){
+        
+    }
 
     public String getContrasenia() {
         return Contrasenia;
@@ -56,6 +57,12 @@ public String getPalabraSecreta() {
 
 public void setPalabraSecreta(String palabraSecreta) {
     PalabraSecreta = palabraSecreta;
+}
+
+@Override
+public String toString() {
+    return "Usuario [Cedula=" + Cedula + ", Correo=" + Correo + ", Contrasenia=" + Contrasenia + ", PalabraSecreta="
+            + PalabraSecreta + "]";
 }
 
 }

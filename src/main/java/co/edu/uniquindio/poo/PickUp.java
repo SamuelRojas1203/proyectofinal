@@ -1,13 +1,16 @@
 package co.edu.uniquindio.poo;
 public class PickUp extends Vehiculo {
         private int capacidadCajaCarga;
+        /*
+         * meta 4x4 a vehiculo
+         */
         private boolean es4x4;
     
-        public PickUp(String marca, boolean esNuevo, String modelo, int cambios, int velocidadMaxima, int cilindraje, 
-                      int numeroPasajeros, int numeroPuertas, boolean aireAcondicionado, boolean camaraReversa, 
-                      int numeroBolsasAire, boolean tieneABS, int capacidadCajaCarga, boolean es4x4) {
-            super(marca, esNuevo, modelo, cambios, velocidadMaxima, cilindraje, numeroPasajeros, numeroPuertas, 
-                  aireAcondicionado, camaraReversa, numeroBolsasAire, tieneABS);
+        public PickUp(String marca, Nuevo nuevo, String modelo, int cambios, int velocidadMaxima, int cilindraje, 
+                      int numeroPasajeros, int numeroPuertas, AireAcondicionado aire, CamaraReversa Camara, 
+                      int numeroBolsasAire, abs ABS, int capacidadCajaCarga, boolean es4x4) {
+            super(marca, nuevo, modelo, cambios, velocidadMaxima, cilindraje, numeroPasajeros, numeroPuertas, 
+                  aire, Camara, numeroBolsasAire, ABS);
             this.capacidadCajaCarga = capacidadCajaCarga;
             this.es4x4 = es4x4;
         }
