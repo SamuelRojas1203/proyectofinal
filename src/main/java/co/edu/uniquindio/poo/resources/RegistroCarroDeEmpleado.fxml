@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="14.0" layoutY="9.0" prefHeight="592.0" prefWidth="355.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="217.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="43.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fx:id="TxtMarca" strokeType="OUTSIDE" strokeWidth="0.0" text="MARCA" wrappingWidth="83.103515625" GridPane.rowIndex="1" />
+            <Text fx:id="TxtNuevo" strokeType="OUTSIDE" strokeWidth="0.0" text="NUEVO O USADO" GridPane.rowIndex="2" />
+            <MenuButton fx:id="BoxNuevoUsado" mnemonicParsing="false" text="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="2">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="BoxCambios" mnemonicParsing="false" text="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="4">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <Text fx:id="TxtModelo" strokeType="OUTSIDE" strokeWidth="0.0" text="MODELO" GridPane.rowIndex="3" />
+            <Text fx:id="TxtCambios" strokeType="OUTSIDE" strokeWidth="0.0" text="CAMBIOS" GridPane.rowIndex="4" />
+            <Text fx:id="TxtVelocidadMaxima" strokeType="OUTSIDE" strokeWidth="0.0" text="VELOCIDAD MAXIMA" GridPane.rowIndex="5" />
+            <Text fx:id="TxtCilindraje" strokeType="OUTSIDE" strokeWidth="0.0" text="CILINDRAJE" GridPane.rowIndex="6" />
+            <Text fx:id="TxtNumeroPasajero" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE PASAJERO" GridPane.rowIndex="7" />
+            <Text fx:id="TxtNumeroPuertas" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE PUERTAS" GridPane.rowIndex="8" />
+            <Text fx:id="TxtCapacidadMaletero" strokeType="OUTSIDE" strokeWidth="0.0" text="CAPACIDAD DE MALETERO" GridPane.rowIndex="9" />
+            <Text fx:id="TxtAire" strokeType="OUTSIDE" strokeWidth="0.0" text="AIRE ACONDICIONADO" GridPane.rowIndex="10" />
+            <Text fx:id="TxtCamaraReversa" strokeType="OUTSIDE" strokeWidth="0.0" text="CAMARA DE REVERSA" GridPane.rowIndex="11" />
+            <Text fx:id="TxtVeolocidadCrucero" strokeType="OUTSIDE" strokeWidth="0.0" text="VELOCIDAD CRUCERO" GridPane.rowIndex="12" />
+            <Text fx:id="TxtBolsasAire" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE BOLSA DE AIRE" GridPane.rowIndex="13" />
+            <Text fx:id="TxtABS" strokeType="OUTSIDE" strokeWidth="0.0" text="ABS" GridPane.rowIndex="14" />
+            <Text fx:id="TxtSensorDeColision" strokeType="OUTSIDE" strokeWidth="0.0" text="SENSOR DE COLISION" GridPane.rowIndex="15" />
+            <Text fx:id="TxtSensorTraficoCruzado" strokeType="OUTSIDE" strokeWidth="0.0" text="SENSOR DE TRAFICO  CRUZADO" GridPane.rowIndex="16" />
+            <Text fx:id="TxtAsistentePermanencia" strokeType="OUTSIDE" strokeWidth="0.0" text="ASISTENTE DE PERMANENCIA DE CARRIL" GridPane.rowIndex="17" />
+            <Text fx:id="TxtNumeroCaballosFuerza" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE CABALLOS DE FUERZA" GridPane.rowIndex="18" />
+            <Text fx:id="TxtTiempoAceleracion" strokeType="OUTSIDE" strokeWidth="0.0" text="TIEMPO DE 0 A 100KM/H" GridPane.rowIndex="19" />
+            <Text fx:id="Txt4X4" strokeType="OUTSIDE" strokeWidth="0.0" text="4X4" GridPane.rowIndex="20" />
+            <Text fx:id="TxtCapacidadCarga" strokeType="OUTSIDE" strokeWidth="0.0" text="CAPACIDAD  DE LA CAJA DE CARGA" GridPane.rowIndex="21" />
+            <Text fx:id="TxtFrenosAire" strokeType="OUTSIDE" strokeWidth="0.0" text="FRENOS DE  AIRE" GridPane.rowIndex="22" />
+            <Text fx:id="TxtNumeroEjes" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE EJES" GridPane.rowIndex="23" />
+            <Text fx:id="TxtSalidaEmergencia" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE SALIDA DE MERGENCIA" GridPane.rowIndex="24" />
+            <Text fx:id="TxtTipoCamion" strokeType="OUTSIDE" strokeWidth="0.0" text="TIPO DE CAMION" GridPane.rowIndex="25" />
+            <Text fx:id="TxtTipoDeVehiculo" strokeType="OUTSIDE" strokeWidth="0.0" text="TIPO DE VEHICULO" />
+            <MenuButton fx:id="BoxTipoVehiculo" mnemonicParsing="false" text="SELECCIONAR" GridPane.columnIndex="1">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <TextField fx:id="FldMarca" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="FldModelo" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="FldVelocidadMaxima" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="FldCilindraje" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="FldNumeroPasajero" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="FldNumeroPuertas" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="FldCapacidadMaletero" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <MenuButton fx:id="BoxCamaraReversa" mnemonicParsing="false" text="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="11">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="BoxVelocidadCrucero" mnemonicParsing="false" text="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="12">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="BoxAire" mnemonicParsing="false" text="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="10">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <TextField fx:id="FldBolsasAire" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <MenuButton fx:id="BOXABS" mnemonicParsing="false" text="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="14">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="BoxSensorColision" mnemonicParsing="false" text="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="15">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="BoxSensorTraficoCruzado" mnemonicParsing="false" text="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="16">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="BoxAsistentePermanencia" mnemonicParsing="false" text="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="17">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="Box4x4" mnemonicParsing="false" text="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="20">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="BoxFrenosAire" mnemonicParsing="false" text="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="22">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="BoxTipoCamion" mnemonicParsing="false" text="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="25">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="26" />
+            <Text fx:id="TxtVenderRentar" strokeType="OUTSIDE" strokeWidth="0.0" text="PARA VENDER O RENTAR" GridPane.rowIndex="26" />
+            <MenuButton fx:id="BoxVenderRentar" mnemonicParsing="false" text="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="26">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <TextField fx:id="FldCaballosFuerza" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+            <TextField fx:id="FldAceleracion" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+            <TextField fx:id="FldCapacidadCarga" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+            <TextField fx:id="FldNumeroEjes" GridPane.columnIndex="1" GridPane.rowIndex="23" />
+            <TextField fx:id="FldSalidaEmergencia" GridPane.columnIndex="1" GridPane.rowIndex="24" />
+         </children>
+      </GridPane>
+      <Text layoutX="372.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donde no aplique segun el tipo de vehiculo poner o escribirl &quot;Null&quot;" />
+      <Button fx:id="ButHome" layoutX="633.0" layoutY="46.0" mnemonicParsing="false" text="Home" />
+   </children>
+</AnchorPane>
