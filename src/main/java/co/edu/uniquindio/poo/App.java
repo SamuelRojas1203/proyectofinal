@@ -64,7 +64,7 @@ public class App {
   
           // Actualizar información del cliente
           clienteA.setCorreo("carlos.perez@example.com");
-          clienteA.setTelefono("3001234567");
+          clienteA.setContrasenia("3001234567");
   
           // Mostrar información actualizada
           System.out.println(clienteA);

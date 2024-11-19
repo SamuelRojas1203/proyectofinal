@@ -4,19 +4,20 @@ public class Cliente {
     private String cedula;
     private String nombre;
     private String correo;
-    private String telefono;
+    private String contrasenia;
 
     // Constructor
     public Cliente(String cedula, String nombre) {
         this.cedula = cedula;
         this.nombre = nombre;
+
     }
 
-    public Cliente(String cedula, String nombre, String correo, String telefono) {
+    public Cliente(String cedula, String nombre, String correo, String contrasenia) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.correo = correo;
-        this.telefono = telefono;
+        this.contrasenia = contrasenia;
     }
 
     // Getters y Setters
@@ -44,12 +45,12 @@ public class Cliente {
         this.correo = correo;
     }
 
-    public String getTelefono() {
-        return telefono;
+    public String getContrasenia() {
+        return contrasenia;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public void setContrasenia(String telefono) {
+        this.contrasenia = telefono;
     }
 
     @Override
@@ -58,7 +59,7 @@ public class Cliente {
                 "cedula='" + cedula + '\'' +
                 ", nombre='" + nombre + '\'' +
                 (correo != null ? ", correo='" + correo + '\'' : "") +
-                (telefono != null ? ", telefono='" + telefono + '\'' : "") +
+                (contrasenia != null ? ", telefono='" + contrasenia + '\'' : "") +
                 '}';
     }
 }

@@ -6,7 +6,7 @@ import java.util.List;
 public class Administrador extends Usuario {
     private List<Empleado> empleados; // Lista para manejar empleados
     private List<Detalle> transacciones; // Lista para registrar transacciones
-
+    
     // Constructor
     public Administrador(String Cedula, String Correo, String Contrasenia, String PalabraSecreta) {
         super(Cedula, Correo, Contrasenia, PalabraSecreta);
