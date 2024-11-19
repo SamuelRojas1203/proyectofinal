@@ -6,7 +6,7 @@ import java.util.List;
 public class Administrador extends Usuario {
     private List<Empleado> empleados; // Lista para manejar empleados
     private List<Detalle> transacciones; // Lista para registrar transacciones
-    
+
     // Constructor
     public Administrador(String Cedula, String Correo, String Contrasenia, String PalabraSecreta) {
         super(Cedula, Correo, Contrasenia, PalabraSecreta);
@@ -14,12 +14,26 @@ public class Administrador extends Usuario {
         this.transacciones = new ArrayList<>(); // Inicializar la lista de transacciones
     }
 
+    
     // Registrar un empleado
     public void registrarEmpleado(Empleado empleado) {
         empleados.add(empleado);
         System.out.println("Empleado registrado: " + empleado.getCedula());
     }
-
+    
+    public Empleado getEmpleado(String cedula) {
+        if (cedula == null || cedula.isEmpty()) {
+            throw new IllegalArgumentException("La cédula no puede ser nula o vacía.");
+        }
+        for (Empleado empleado : empleados) {
+            if (empleado.getCedula().equals(cedula)) {
+                return empleado;
+            }
+        }
+        return null; // Retorna null si no encuentra al empleado
+    }
+    
+    
     // Actualizar datos de un empleado
     public void actualizarEmpleado(String cedula, Empleado nuevosDatos) {
         for (Empleado empleado : empleados) {

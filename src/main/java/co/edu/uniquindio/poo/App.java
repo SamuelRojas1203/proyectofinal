@@ -59,8 +59,8 @@ public class App {
           Cliente clienteB = new Cliente("789012", "Ana Gómez", "ana.gomez@example.com", "3123456789");
   
           // Mostrar información de los clientes
-          System.out.println(clienteA);
-          System.out.println(clienteB);
+          System.out.println(clienteA.toString());
+          System.out.println(clienteB.toString());
   
           // Actualizar información del cliente
           clienteA.setCorreo("carlos.perez@example.com");
