@@ -64,7 +64,14 @@ public class Vehiculo {
         this.aire = aire;
         this.a=a;
     }
-
+    public Vehiculo(String marca, Nuevo nuevo, String modelo, int cambios, int velocidadMaxima, int cilindraje){
+        this.Marca = marca;
+        this.nuevo = nuevo;
+        this.Modelo = modelo;
+        this.Cambios = cambios;
+        this.VelocidadMaxima = velocidadMaxima;
+        this.Cilindraje = cilindraje;
+    }
     public String getMarca() {
         return Marca;
     }
@@ -136,6 +143,7 @@ public class Vehiculo {
     public void setTieneABS(abs ABS) {
         this.a = ABS;
     }
+    
 
     @Override
     public String toString() {
